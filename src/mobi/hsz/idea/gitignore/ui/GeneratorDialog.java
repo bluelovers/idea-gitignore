@@ -234,7 +234,7 @@ public class GeneratorDialog extends DialogWrapper {
         while (iterator.hasNext()) {
             final Resources.Template template = iterator.next();
             if (template != null) {
-                content.append(IgnoreBundle.message("file.templateSection", template.getName()));
+                content.append(Constants.NEWLINE).append(IgnoreBundle.message("file.templateSection", template.getName()));
                 content.append(Constants.NEWLINE).append(template.getContent());
 
                 if (iterator.hasNext()) {
